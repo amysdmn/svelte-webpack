@@ -1,0 +1,337 @@
+.cards{
+    padding-top:16px;
+    padding-bottom:4px;
+    margin:0 12px 20px 12px;
+    box-shadow: 0 1px 10px 0 rgba(141,164,181,0.20);
+    border-radius: 6px;
+    .cardTitle{
+        display:flex;
+        align-items: center;
+        .cardColor{
+            width:12px;
+            height:28px;
+        }
+        .card_title{
+            position:relative;
+            width:fit-content;
+            width:-moz-fit-content;
+            width:-webkit-fit-content;
+            .new{
+                position:absolute;
+                width:25px;
+                height:14px;
+                top:-5px;
+                right:-12px;
+            }
+            .hot{
+                position:absolute;
+                width:25px;
+                height:14px;
+                top:-5px;
+                right:-12px;
+            }
+        }
+        span{
+            font-size:20px;
+            color:#fff;
+            height:28px;
+            font-weight:bold;
+            color:#fff;
+            display:flex;
+            align-items: center;
+            width:fit-content;
+            width:-moz-fit-content;
+            width:-webkit-fit-content;
+            padding:4px 8px;
+            background-color:#333;
+            box-sizing:border-box;
+        }
+    }
+    .content{
+        margin:12px;
+        margin-bottom:0;
+        display:flex;
+        flex-wrap: wrap;
+        .pgcContent{
+            width: calc((100vw - 56px)/2);
+            margin-bottom:8px;
+            background: rgba(250,251,251,0.84);
+            border-radius: 4px;
+            padding:12px 8px 10px 8px;
+            box-sizing:border-box;
+            position:relative;
+            .subTitle{
+                font-size:13px;
+                color:#666;
+                line-height:13px;
+                height:13px;
+                margin-bottom:12px;
+                text-overflow: -o-ellipsis-lastline;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                line-clamp: 1;
+                /* autoprefixer: off */
+                -webkit-box-orient: vertical;
+                /* autoprefixer: on */
+            }
+            &.pgcContentOdd{
+            	margin-right: 8px;
+            }
+        }
+        .ugcContent{
+            width:100%;
+            background: rgba(250,251,251,0.84);
+            border-radius: 4px;
+            padding:12px 10px 10px 8px;
+            box-sizing:border-box;
+            position:relative;
+            display:flex;
+            align-items: center;
+            margin-bottom:8px;
+            .left{
+                flex:1;
+                .title{
+                    margin-bottom:2px;
+                }
+                .subTitle{
+                    margin-bottom:5px;
+                    .list{
+                        width:fit-content;
+                        width:-moz-fit-content;
+                        display:flex;
+                        align-items: center;
+                        background-color:rgba(51,51,51,0.06);
+                        border-radius:10px;
+                        padding-left:2px;
+                        padding-right:8px;
+                        height:20px;
+                        .authorlogo{
+                            width:16px;
+                            height:16px;
+                            border-radius:8px;
+                            margin-right:2px;
+                        }
+                        span{
+                            font-size:13px;
+                            color:#666;
+                            flex:1;
+                            text-overflow: -o-ellipsis-lastline;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 1;
+                            line-clamp: 1;
+                            /* autoprefixer: off */
+                            -webkit-box-orient: vertical;
+                            /* autoprefixer: on */
+                        }
+                    }
+                    &.subTitle-withImg{
+                        margin-right:54px
+                    }
+                    &.subTitle-noImg{
+                        margin-right:120px
+                    }
+                }
+            }
+            .right{
+                margin-left:6px;
+                .sceneImg{
+                    width:60px;
+                    height:60px;
+                    border-radius:4px;
+                }
+            }
+            
+        }
+        .title{
+            font-size:16px;
+            height:16px;
+            line-height:17px;
+            color:#333;
+            font-weight:bold;
+            margin-bottom:6px;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            /* autoprefixer: off */
+            -webkit-box-orient: vertical;
+            /* autoprefixer: on */
+        }
+        .readCount{
+            display:flex;
+            align-items: center;
+            .count{
+                font-size:11px;
+                color: #AFAFAF;
+                line-height:11px;
+                margin-right:3px;
+            }
+            .updateIos{
+                width:fit-content;
+                width:-moz-fit-content;
+                width:-webkit-fit-content;
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                background-color: rgba(0,134,246,0.10);
+                border-radius:2px;
+                height:13px;
+                line-height:13px;
+                padding-left:3px;
+                padding-right:3px;
+                span{
+                    font-size:10px;
+                    letter-spacing: -0.3px;
+                    color:#0086F6;
+                    
+                }
+            }
+            .updateAndroid{
+                width:fit-content;
+                width:-moz-fit-content;
+                width:-webkit-fit-content;
+                background-color: rgba(0,134,246,0.10);
+                border-radius:2px;
+                padding:0px 3px;
+                line-height:10px;
+                span{
+                    font-size:10px;
+                    letter-spacing: -0.3px;
+                    color:#0086F6;
+                    line-height:10px;
+                }
+            }
+        }
+        .new{
+            position:absolute;
+            width:25px;
+            height:14px;
+            top:-5px;
+            left:0;
+        }
+        .hot{
+            position:absolute;
+            width:25px;
+            height:14px;
+            top:-5px;
+            left:0;
+        }
+        .rank{
+            margin-bottom:8px;
+            width:100%;
+            border-radius: 6px;
+            height:60px;
+            display:flex;
+            align-items: center;
+            position:relative;
+            overflow:hidden;
+            .rankContent{
+                flex:1;
+                display:flex;
+                flex-direction:column;
+                margin-left:8px;
+            }
+            .ranktitle{
+                display:flex;
+                align-items: center;
+                img{
+                    width:18px;
+                    height:18px;
+                    margin-right:4px;
+                }
+                span{
+                    font-size:16px;
+                    font-weight:bold;
+                    color:#333;
+                    line-height:16px;
+                    text-overflow: -o-ellipsis-lastline;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    line-clamp: 1;
+                    /* autoprefixer: off */
+                    -webkit-box-orient: vertical;
+                    /* autoprefixer: on */
+                } 
+            }
+            .subTitle{
+                margin-top:6px;
+                font-size:12px;
+                color:#999;
+                line-height:13px;
+            }
+            .arrow{
+                width:16px;
+                height:16px;
+                margin-right:12px;
+            }
+            &.rank_sight{
+                background-image: linear-gradient(-90deg, rgba(255,152,0,0.06) 0%, rgba(255,203,69,0.06) 100%);
+                &::after{
+                    position:absolute;
+                    content:'';
+                    display:block;
+                    background:url("https://pages.c-ctrip.com/you/guides/sight_bg@3x.png") no-repeat;
+                    background-size: auto 60px;
+                    right:0;
+                    top:0;
+                    width:113px;
+                    height:60px;
+                }
+            }
+            &.rank_hotel{
+                background-image: linear-gradient(-90deg, rgba(40,183,255,0.08) 0%, rgba(18,120,255,0.08) 100%);
+                &::after{
+                    position:absolute;
+                    content:'';
+                    display:block;
+                    background:url("https://pages.c-ctrip.com/you/guides/hotel_bg@3x.png") no-repeat;
+                    background-size: auto 60px;
+                    right:0;
+                    top:0;
+                    width:113px;
+                    height:60px;
+                }
+            }
+            &.rank_food{
+                background-image: linear-gradient(-90deg, rgba(227,44,59,0.08) 0%, rgba(255,126,126,0.08) 100%);
+                &::after{
+                    position:absolute;
+                    content:'';
+                    display:block;
+                    background:url("https://pages.c-ctrip.com/you/guides/food_bg@3x.png") no-repeat;
+                    background-size: auto 60px;
+                    right:0;
+                    top:0;
+                    width:113px;
+                    height:60px;
+                }
+            }
+            &.rank_shop{
+                background-image: linear-gradient(-90deg, rgba(243,129,255,0.08) 0%, rgba(151,48,244,0.08) 100%);
+                &::after{
+                    position:absolute;
+                    content:'';
+                    display:block;
+                    background:url("https://pages.c-ctrip.com/you/guides/shop_bg@3x.png") no-repeat;
+                    background-size: auto 60px;
+                    right:0;
+                    top:0;
+                    width:113px;
+                    height:60px;
+                }
+            }
+        }
+       
+    }
+    &.cardsLast{
+        margin-bottom:0;
+    }
+}

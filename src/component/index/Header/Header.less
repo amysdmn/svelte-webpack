@@ -1,0 +1,42 @@
+header{
+	overflow: hidden;
+	height: 44px;
+	position: fixed;
+	height: 44px;
+    width: 100%;
+    z-index: 10;
+	.left{
+		float: left;
+		width: 44px;
+    	height: 44px;
+    	display: flex;
+		align-items: center;
+		justify-content: center;
+    	img{
+    		width: 22px;
+    		height: 22px;
+    	}
+	}
+	.center{
+		position: absolute;
+        line-height: 44px;
+        text-align:center;
+        height: 44px;
+        font-size: 18px;
+        left: 88px;
+        right: 88px;
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        /* autoprefixer: off */
+        -webkit-box-orient: vertical;
+        /* autoprefixer: on */ 
+	}
+	&.model{
+		background: #fff;
+		border-bottom: 1px solid #e5e5e5;
+	}
+}
